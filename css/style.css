@@ -204,7 +204,7 @@
     @media screen and (max-width: 768px) {
       #fh5co-header {
         margin-top: 0;
-        background: rgba(0, 0, 0, 0.5);                   /* header color mobile up*/
+        background: rgba(0, 0, 0, 0.8);                   /* header color mobile up*/
         -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
         -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
         -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -303,7 +303,7 @@
     }
     #fh5co-header.navbar-fixed-top {
       position: fixed !important;
-      background:  rgba(0, 0, 0, 0.9);                                /* header color down*/
+      background:  rgba(0, 0, 0, 0.8);                                /* header color down*/
       -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -373,8 +373,8 @@
       background-attachment: fixed;
       position: relative;
       width: 100%;
-      background-color: #7c55ff;
-      color: #fff;
+      /*background-color: #7c55ff;
+      color: #000;*/
       overflow: hidden;
     }
     #fh5co-home .gradient {
@@ -384,7 +384,7 @@
       left: 0;
       right: 0;
       z-index: 2;
-      opacity: .9;
+      opacity: .7;
       -webkit-backface-visibility: hidden;
       background-color: #7c55ff;
       /* IE9, iOS 3.2+ */
@@ -1425,5 +1425,7 @@
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
     }
+
+
 
     /*# sourceMappingURL=style.css.map */
