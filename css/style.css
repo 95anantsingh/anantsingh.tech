@@ -16,9 +16,8 @@
       font-weight: 300;
       font-size: 20px;
       line-height: 1.5;
-      color: #777777;                            /* generalbody text color */
-      color: #7f7f7f;
-      background: #fff;                         /* backgroud color of page */
+      color: #fff;                            /* generalbody text color */
+      background: rgba(0, 0, 0, 0.92);               /* backgroud color of page */
       height: 100%;
       position: relative;
     }
@@ -369,12 +368,9 @@
 
     #fh5co-home {
       background-color: transparent;
-      background-size: cover;
       background-attachment: fixed;
       position: relative;
       width: 100%;
-      /*background-color: #7c55ff;
-      color: #000;*/
       overflow: hidden;
     }
     #fh5co-home .gradient {
@@ -716,7 +712,7 @@
       right: 0;
       bottom: 0;
       z-index: 2;
-      background: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.7);
     }
     #fh5co-counters:before, #fh5co-counters:after {
       position: absolute;
@@ -1052,9 +1048,9 @@
       list-style: none;
     }
     #fh5co-contact .fh5co-contact-info li i {
-      position: absolute;
-      top: .2em;
-      left: 0;
+      position: relative;
+      top: .1em;
+      left: -10px;
     }
 
 
@@ -1230,11 +1226,11 @@
       position: absolute;
       top: -20px;
       left: 50%;
-      margin-left: -40px;
+      margin-left: -25px;
       background: #fff;
       z-index: 8;
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       font-size: 30px;
       padding-top: 5px;
       text-align: center;
