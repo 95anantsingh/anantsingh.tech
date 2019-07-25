@@ -3543,30 +3543,77 @@ input, select, textarea {
 		
 	}
 
-		@media screen and (orientation: portrait) {
+	#page-wrapper > .scrollZone {
+		position: fixed;
+		width: 25%;
+		height: inherit;
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+		cursor: -ms-grab;
+		cursor: grab;
+		z-index: 10100;
+	}
 
-			#page-wrapper {
-				padding-left: 2rem;
-				padding-right: 2rem;
-			}
+	#page-wrapper > .scrollZone.left {
+		left: 0;
+	}
 
+	#page-wrapper > .scrollZone.right {
+		right: 0;
+	}
+
+	#page-wrapper.is-dragging {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+		cursor: -ms-grab;
+		cursor: grab;
+	}
+
+	#page-wrapper.is-dragging * {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	#page-wrapper.is-dragging * {
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+		cursor: -ms-grab;
+		cursor: grab;
+	}
+
+	#page-wrapper.is-dragged * {
+		pointer-events: none;
+	}
+	@media screen and (orientation: portrait) {
+
+		#page-wrapper {
+			padding-left: 2rem;
+			padding-right: 2rem;
 		}
 
-		@media screen and (min-aspect-ratio: 16 / 7) {
+	}
 
-			#page-wrapper {
-				padding: 6vh;
-			}
+	@media screen and (min-aspect-ratio: 16 / 7) {
 
+		#page-wrapper {
+			padding: 6vh;
 		}
 
-		@media screen and (min-aspect-ratio: 16 / 6) {
+	}
 
-			#page-wrapper {
-				padding: 0;
-			}
+	@media screen and (min-aspect-ratio: 16 / 6) {
 
+		#page-wrapper {
+			padding: 0;
 		}
+
+	}
 
 	@media screen and (max-width: 736px) {
 
@@ -3574,7 +3621,9 @@ input, select, textarea {
 			height: auto;
 			padding: 1rem;
 		}
-
+		#page-wrapper > .scrollZone {
+			display: none;
+		}
 	}
 
 	@media screen and (max-width: 480px) {
@@ -3610,74 +3659,26 @@ input, select, textarea {
 		box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
 	}
 
-		#wrapper > .scrollZone {
-			position: fixed;
-			width: 35%;
-			height: inherit;
-			cursor: -moz-grab;
-			cursor: -webkit-grab;
-			cursor: -ms-grab;
-			cursor: grab;
-			z-index: 10100;
-		}
+	#wrapper > .copyright {
+		position: absolute;
+		bottom: -3rem;
+		right: 0;
+		font-size: 0.8rem;
+		color: rgba(46, 43, 55, 0.375);
+		margin-bottom: 0;
+	}
 
-			#wrapper > .scrollZone.left {
-				left: 0;
-			}
+	#wrapper > .copyright a:hover {
+		color: inherit;
+	}
 
-			#wrapper > .scrollZone.right {
-				right: 0;
-			}
-
-		#wrapper > .copyright {
-			position: absolute;
-			bottom: -3rem;
-			right: 0;
-			font-size: 0.8rem;
-			color: rgba(46, 43, 55, 0.375);
-			margin-bottom: 0;
-		}
-
-			#wrapper > .copyright a:hover {
-				color: inherit;
-			}
-
-		#wrapper.is-dragging {
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-			cursor: -moz-grab;
-			cursor: -webkit-grab;
-			cursor: -ms-grab;
-			cursor: grab;
-		}
-
-			#wrapper.is-dragging * {
-				-moz-user-select: none;
-				-webkit-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-
-			#wrapper.is-dragging * {
-				cursor: -moz-grab;
-				cursor: -webkit-grab;
-				cursor: -ms-grab;
-				cursor: grab;
-			}
-
-		#wrapper.is-dragged * {
-			pointer-events: none;
-		}
-
-		body.is-preload #wrapper {
-			-moz-transform: translateX(2rem);
-			-webkit-transform: translateX(2rem);
-			-ms-transform: translateX(2rem);
-			transform: translateX(2rem);
-			opacity: 0;
-		}
+	body.is-preload #wrapper {
+		-moz-transform: translateX(2rem);
+		-webkit-transform: translateX(2rem);
+		-ms-transform: translateX(2rem);
+		transform: translateX(2rem);
+		opacity: 0;
+	}
 
 	@media screen and (max-width: 736px) {
 
@@ -3691,22 +3692,18 @@ input, select, textarea {
 			box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(46, 43, 55, 0.5);
 		}
 
-			#wrapper > .scrollZone {
-				display: none;
-			}
+		#wrapper > .copyright {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
 
-			#wrapper > .copyright {
-				display: block;
-				width: 100%;
-				text-align: center;
-			}
-
-			body.is-preload #wrapper {
-				-moz-transform: translateY(1rem);
-				-webkit-transform: translateY(1rem);
-				-ms-transform: translateY(1rem);
-				transform: translateY(1rem);
-			}
+		body.is-preload #wrapper {
+			-moz-transform: translateY(1rem);
+			-webkit-transform: translateY(1rem);
+			-ms-transform: translateY(1rem);
+			transform: translateY(1rem);
+		}
 
 	}
 
@@ -3716,11 +3713,12 @@ input, select, textarea {
 			box-shadow: none;
 		}
 
-			body.is-preload #wrapper {
-				-moz-transform: none;
-				-webkit-transform: none;
-				-ms-transform: none;
-				transform: none;
-			}
+		body.is-preload #wrapper {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+		}
 
 	}
+

@@ -11,7 +11,7 @@
 						enabled: true,
 
 					// Sets the distance to scroll when using the left/right arrow keys.
-						distance: 50
+						distance: 150
 
 				},
 
@@ -65,8 +65,8 @@
 			$body = $('body'),
 			$html = $('html'),
 			$bodyHtml = $('body,html'),
-			$wrapper = $('#wrapper');
-
+			$wrapper = $('#page-wrapper');
+			console.log($wrapper)
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -360,7 +360,7 @@
 
 							intervalId = setInterval(function() {
 								$document.scrollLeft($document.scrollLeft() + (settings.scrollZones.speed * direction));
-							}, 25);
+							}, 50);
 
 					},
 					deactivate = function() {
