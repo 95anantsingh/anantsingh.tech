@@ -2,12 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
 /*----------- Custom CSS ---------------*/
-
+#arrow{
+  position:fixed;
+  width:100%;
+  text-align:center;
+}
+#arrow a{
+  display:inline-block;
+  background: tomato;
+  padding:6px 15px;
+  border-radius:3px;
+  cursor:pointer;
+}
+section{
+  height:1200px;
+  border:3px solid #444;
+}
 .nav{
 	z-index: 2;
 	position: fixed;
 	left: 50%;
-	bottom: 0;
+	bottom: -5px;
 	transform: translate(-50%, -50%);
 	margin: 0 auto;
 	max-height: 40px;
@@ -3597,7 +3612,7 @@ input, select, textarea {
 
 		#wrapper > .scrollZone {
 			position: fixed;
-			width: 6rem;
+			width: 35%;
 			height: inherit;
 			cursor: -moz-grab;
 			cursor: -webkit-grab;
