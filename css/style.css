@@ -535,6 +535,13 @@
       font-size: 24px;
       font-weight: 400;
     }
+    #fh5co-intro .fh5co-block p {
+      color: #333333;
+    }
+
+    #fh5co-intro .fh5co-block:hover p {
+      color: #fff;
+    }
     #fh5co-intro .fh5co-block:hover > .overlay, #fh5co-intro .fh5co-block:focus > .overlay {
       opacity: 0;
       z-index: 9;
@@ -617,7 +624,7 @@
         padding: 2em 0;
       }
     }
-
+    
     #fh5co-services, #fh5co-work, #fh5co-counters {
       padding: 7em 0;
     }
