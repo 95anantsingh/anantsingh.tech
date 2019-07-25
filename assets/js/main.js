@@ -66,7 +66,7 @@
 			$html = $('html'),
 			$bodyHtml = $('body,html'),
 			$wrapper = $('#page-wrapper');
-			console.log($wrapper)
+		
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -360,7 +360,7 @@
 
 							intervalId = setInterval(function() {
 								$document.scrollLeft($document.scrollLeft() + (settings.scrollZones.speed * direction));
-							}, 52);
+							}, 40);
 
 					},
 					deactivate = function() {
