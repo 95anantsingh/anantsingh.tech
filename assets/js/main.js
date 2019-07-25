@@ -360,7 +360,7 @@
 
 							intervalId = setInterval(function() {
 								$document.scrollLeft($document.scrollLeft() + (settings.scrollZones.speed * direction));
-							}, 50);
+							}, 52);
 
 					},
 					deactivate = function() {
