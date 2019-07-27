@@ -1,6 +1,8 @@
 
 (function($) {
 
+
+
 	// Settings.
 		var settings = {
 
@@ -22,7 +24,7 @@
 						enabled: true,
 
 					// Sets the scroll wheel factor. (Ideally) a value between 0 and 1 (lower = slower scroll, higher = faster scroll).
-						factor: 1
+						factor: 1.5
 
 				},
 
@@ -33,7 +35,7 @@
 						enabled: true,
 
 					// Sets the speed at which the page scrolls when a scroll zone is active (higher = faster scroll, lower = slower scroll).
-						speed: 35
+						speed: 45
 
 				},
 
@@ -58,6 +60,9 @@
 				linkScrollSpeed: 1000
 
 		};
+
+
+
 
 	// Vars.
 		var	$window = $(window),
@@ -360,7 +365,15 @@
 
 							intervalId = setInterval(function() {
 								$document.scrollLeft($document.scrollLeft() + (settings.scrollZones.speed * direction));
-							}, 40);
+								if(window.pageXOffset==0)
+									document.getElementsByClassName("prev")[0].classList.add("disabled");
+								else
+									document.getElementsByClassName("prev")[0].classList.remove("disabled");
+								if((window.innerWidth+window.pageXOffset+1)>=document.body.scrollWidth)
+									document.getElementsByClassName("next")[0].classList.add("disabled");
+								else
+									document.getElementsByClassName("next")[0].classList.remove("disabled");
+							}, 0.1);
 
 					},
 					deactivate = function() {
@@ -381,12 +394,24 @@
 
 				$left
 					.css('left', '0')
+					.on('click' , function(event){
+						$bodyHtml
+						.animate({scrollLeft: 0},800,"swing");
+						document.getElementsByClassName("prev")[0].classList.add("disabled");
+						document.getElementsByClassName("next")[0].classList.remove("disabled");
+					} )
 					.on('mouseenter', function(event) {
 						activate(-1);
 					});
 
 				$right
 					.css('right', '0')
+					.on('click' , function(event){
+						$bodyHtml
+						.animate({scrollLeft: document.body.scrollWidth},800,"swing");
+						document.getElementsByClassName("next")[0].classList.add("disabled");
+						document.getElementsByClassName("prev")[0].classList.remove("disabled");
+					} )
 					.on('mouseenter', function(event) {
 						activate(1);
 					});

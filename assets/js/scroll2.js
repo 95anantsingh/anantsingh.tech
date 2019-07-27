@@ -25,3 +25,16 @@ $(".prev, .next").click(function(){
     }
    
 });
+
+var $sec = $("section");
+$(".prev, .next").click(function(){
+    var a = Math.trunc($sec.filter(function(i, el) {
+            return el.getBoundingClientRect().right > 0;
+        })[$(this).hasClass("next")?"next":"prev"]("section").offset().left);
+    if(a<100){
+        $("html, body").stop().animate({scrollLeft: 0},800,"swing");
+    }
+    else{
+        $("html, body").stop().animate({scrollLeft: a+1},800,"swing");
+    }
+});
