@@ -210,7 +210,7 @@ input, select, textarea {
 		object-fit: contain;
 		font-family: "Source Sans Pro", Arial, sans-serif;
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 1.2rem;
 		line-height: 1.5;
 		color: #fff; 
 		background-color: rgb(19, 18, 18);                           /* generalbody text color */
@@ -327,7 +327,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -2207,10 +2207,10 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #593db3);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(53, 36, 158, 0.7),  rgba(50, 16, 81, 0.7));
 				background-size: 128px 128px, auto;
 			}
-
+			
 			.panel > *.color1 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
@@ -3216,7 +3216,7 @@ input, select, textarea {
 			.panel.color1 {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #726193;
+
 			}
 
 			.panel.color2 {
