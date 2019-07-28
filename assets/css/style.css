@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'features';
+  src:  url('../webfonts/features.eot?nyzu42');
+  src:  url('../webfonts/features.eot?nyzu42#iefix') format('embedded-opentype'),
+    url('../webfonts/features.ttf?nyzu42') format('truetype'),
+    url('../webfonts/features.woff?nyzu42') format('woff'),
+    url('../webfonts/features.svg?nyzu42#features') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'features' !important;
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-video-record:before {
+  content: "\e900";
+}
+.icon-self-destruct:before {
+  content: "\e901";
+}
+.icon-face-recognition:before {
+  content: "\e902";
+}
+.icon-geo-locate:before {
+  content: "\f5a0";
+}
+.icon-object-detection:before {
+  content: "\f247";
+}
+.icon-video-feed:before {
+  content: "\f838";
+}
+.icon-android-app:before {
+  content: "\f17b";
+}

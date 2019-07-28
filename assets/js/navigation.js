@@ -54,12 +54,13 @@ function ud(){
         function() { n.toggle(); n.animate({top:'0'},300,
         function() { a.clearQueue(); n.clearQueue();})});}
       );
-      if(index==1)
-        document.getElementsByClassName("up")[0].classList.toggle("disabled");
-      if(index==len-2)
-        document.getElementsByClassName("down")[0].classList.toggle("disabled");
+      if(index==0){
+        console.log("index==1")
+        document.getElementsByClassName("up")[0].classList.toggle("disabled");}
+      if(index==len-2){
+        console.log("(index==len-2)")
+        document.getElementsByClassName("down")[0].classList.toggle("disabled");}
     }
-      document.getElementsByClassName("up")[0].classList.toggle("disabled");
   }
   else if(event.target.classList.contains("up")){
     if(index>0){
@@ -72,10 +73,12 @@ function ud(){
         function() { n.toggle(); n.animate({top:'0'},300,"swing",
         function() { a.clearQueue(); n.clearQueue();})});}
       );
-      if(index==len-1)
-        document.getElementsByClassName("down")[0].classList.toggle("disabled");
-      if(index==1)
-        document.getElementsByClassName("up")[0].classList.toggle("disabled");
+      if(index==len-1){
+        console.log("ndex==len-1")
+        document.getElementsByClassName("down")[0].classList.toggle("disabled");}
+      if(index==1){
+        console.log("index==1")
+        document.getElementsByClassName("up")[0].classList.toggle("disabled");}
     }
   } 
 }
