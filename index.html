@@ -26,7 +26,8 @@
 
     <link rel="canonical" href="https://95anantsingh.github.io/" />
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet"
+      type="text/css">
     <link rel="stylesheet" href="css/leaflet.css" />
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/icomoon.css">
@@ -37,7 +38,7 @@
     <link rel="stylesheet" href="css/custom.css">
 
     <script src="js/modernizr-2.6.2.min.js"></script>
-    
+
   </head>
 
   <body>
@@ -47,8 +48,8 @@
 
         <nav class="navbar navbar-default">
           <div class="navbar-header">
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" 
-               aria-expanded="false" aria-controls="navbar"><i></i></a>
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar"><i></i></a>
             <a class="navbar-brand" href="index.html">Anant Singh</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -56,7 +57,7 @@
 
               <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
               <li><a href="#" data-nav-section="work"><span>Projects</span></a></li>
-              <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
+              <li><a href="#" data-nav-section="testimonials"><span>Research</span></a></li>
               <li><a href="#" data-nav-section="services"><span>Skills</span></a></li>
               <li><a href="#" data-nav-section="about"><span>Academics</span></a></li>
               <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
@@ -68,8 +69,8 @@
     </header>
 
 
-    <section id="fh5co-home" data-section="home"
-      style="background-image: url(images/home_background2.jpg); position: relative;" data-stellar-background-ratio="1">
+    <section id="fh5co-home" data-section="home" style="background-image: url(images/home/home_background.jpg);"
+      data-stellar-background-ratio="1">
       <div id="particles-js" class="gradient" style="position: relative; height: 900px; z-index:0">
         <canvas class="particles-js-canvas-el">
         </canvas>
@@ -79,13 +80,18 @@
           <div class="text-inner">
             <div class="rowCustom">
               <div class="column left" style="position:relative; top: -975px;">
-                <figure>
-                  <img class="profile to-animate" src="images/profile_pic.jpg" alt="Person1">
-                </figure>
+                <figure><img class="profile to-animate" src="images/home/profile_pic.jpg" alt="Person1"></figure>
               </div>
-              <div class=" column right" style="position:relative; top: -925px;">
-                <h1 class="to-animate">Data Science is my love.</h1>
-                <h2 class="to-animate">Its been so many years now</h2>
+              <div class=" column right text-left to-animate" style="position:relative; top: -925px;  padding-left: 8%;">
+                    <div id="typed-string1" style="display:none">
+                        <p>Hi, there! ^1000 <strong>I'm Anant</strong></p>
+                    </div> 
+                    <div id="typed-string2" style="display:none">
+                        <p><br>I'm passionate about using data to</p>
+                    </div>
+                    <span id="typed-head" class="head"></span>
+                    <span id="typed-intro" class="headtxt"></span>
+                    <i><span id="intro-end" class="headtxt"></span></i>
               </div>
             </div>
           </div>
@@ -95,66 +101,65 @@
     </section>
 
 
-    <section id="fh5co-intro">
+    <section id="fh5co-intro" data-section="intro">
       <div class="container">
-        <div class="row row-bottom-padded-lg">
+
+        <div class="row">
+          <div class="to-animate">
+            <div class="topskills section-heading text-center fh5co-text">
+              <h2 style="margin: 0px; padding:0px;">Top Skills</h2>
+            </div>
+          </div>
+          
           <div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
             <div class="overlay-darker"></div>
             <div class="overlay"></div>
             <div class="fh5co-text">
               <i class="fh5co-intro-icon icon-bulb"></i>
-              <h2>Plan</h2>
+              <h2>Machine Learning</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
                 blind texts.</p>
-              <p><a href="#" class="btn btn-primary">Get In Touch</a></p>
+              <p><a href="#fh5co-services" class="btn btn-primary">Get In Touch</a></p>
 
             </div>
           </div>
-
           <div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">
             <div class="overlay-darker"></div>
             <div class="overlay"></div>
             <div class="fh5co-text">
               <i class="fh5co-intro-icon icon-wrench"></i>
-              <h2>Develop</h2>
+              <h2>Data Science and Analytics</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
                 blind texts.</p>
 
-              <p><a href="#" class="btn btn-primary">Click Me</a></p>
+              <p><a href="#services" class="btn btn-primary">Click Me</a></p>
 
             </div>
           </div>
-
           <div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">
             <div class="overlay-darker"></div>
             <div class="overlay"></div>
             <div class="fh5co-text">
               <i class="fh5co-intro-icon icon-rocket"></i>
-              <h2>Launch</h2>
+              <h2>Android App Development</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
                 blind texts.</p>
 
-              <p><a href="#" class="btn btn-primary">Why us?</a></p>
+              <p><a href="#services" class="btn btn-primary">Why us?</a></p>
 
             </div>
           </div>
 
         </div>
 
-        <div class="row watch-video text-center to-animate">
-
-          <span>Watch the video</span>
-
-          <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i
-              class="icon-play2"></i></a>
-        </div>
-
       </div>
     </section>
 
-    
+
     <section id="fh5co-work" data-section="work">
+
       <div class="container">
+
         <div class="row">
           <div class="col-md-12 section-heading text-center" style="padding-bottom: 5px; margin-bottom: 10px; ">
             <h2 class="to-animate">Projects</h2>
@@ -169,7 +174,7 @@
 
           <div class="col-md-4 col-sm-6 col-xxs-12">
             <a onclick="passData(0)" class="fh5co-project-item to-animate">
-              <img src="images/work_1.jpg" alt="Image2" class="img-responsive">
+              <img src="images/projects/spysee.jpg" alt="SpySee" class="img-responsive">
               <div class="fh5co-text">
                 <h2>SpySee</h2>
                 <span>A reconnaissance robot.</span>
@@ -177,7 +182,7 @@
             </a>
           </div>
 
-          <div class="clearfix visible-sm-block"></div>
+
 
           <div class="col-md-4 col-sm-6 col-xxs-12">
             <a onclick="passData(1)" class="fh5co-project-item to-animate">
@@ -189,31 +194,31 @@
             </a>
           </div>
 
-          <div class="clearfix visible-sm-block"></div>
+
 
           <div class="col-md-4 col-sm-6 col-xxs-12">
             <a onclick="passData(2)" class="fh5co-project-item to-animate">
               <img src="images/work_3.jpg" alt="Image3" class="img-responsive">
               <div class="fh5co-text">
-                <h2>Project 3</h2>
-                <span>Design</span>
+                <h2>RoboCar</h2>
+                <span>A Robot for agriculture.</span>
               </div>
             </a>
           </div>
 
-          <div class="clearfix visible-sm-block"></div>
+
 
           <div class="col-md-4 col-sm-6 col-xxs-12">
             <a href="images/work_4.jpg" class="fh5co-project-item image-popup to-animate">
               <img src="images/work_4.jpg" alt="Image4" class="img-responsive">
               <div class="fh5co-text">
-                <h2>Project 4</h2>
+                <h2></h2>
                 <span>Design</span>
               </div>
             </a>
           </div>
 
-          <div class="clearfix visible-sm-block"></div>
+
 
           <div class="col-md-4 col-sm-6 col-xxs-12">
             <a href="images/work_5.jpg" class="fh5co-project-item image-popup to-animate">
@@ -225,7 +230,6 @@
             </a>
           </div>
 
-          <div class="clearfix visible-sm-block"></div>
 
           <div class="col-md-4 col-sm-6 col-xxs-12">
             <a href="images/work_6.jpg" class="fh5co-project-item image-popup to-animate">
@@ -237,21 +241,22 @@
             </a>
           </div>
 
-          <div class="clearfix visible-sm-block"></div>
+
 
         </div>
+      </div>
+
     </section>
 
 
     <section id="fh5co-testimonials" data-section="testimonials">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 section-heading text-center">
-            <h2 class="to-animate" style="color: #fff">Testimonials</h2>
+          <div class="col-md-12 section-heading text-center" style="padding: 0;" >
+            <h2 class="to-animate" style="color: #fff">Research</h2>
             <div class="row">
               <div class="col-md-8 col-md-offset-2 subtext to-animate">
-                <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                  the blind texts.</h3>
+                <h3>I'm a researcher at heart and have devoted a lot of my time to it...</h3>
               </div>
             </div>
           </div>
@@ -261,14 +266,14 @@
           <div class="col-md-4">
             <div class="box-testimony">
               <blockquote class="to-animate-2">
-                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                  live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                  language ocean.&rdquo;</p>
+                <p>&ldquo;Proposed work describes a new grounded lossy inductance (grounded parallel RL network) simulator 
+                  configuration employing two Dual-output voltage-differencing buffered amplifiers (DO-VDBA) along with 
+                  single capacitance...&rdquo;</p>
               </blockquote>
               <div class="author to-animate">
-                <figure><img src="images/person1.jpg" alt="Person1"></figure>
-                <p>Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span
-                    class="subtext">Creative Director</span></p>
+                <figure><img src="images/research/ieee.jpg"></figure>
+                <p style="color: #fff">IEEE May 2019
+                   <span style="color: #fff" class="subtext"><a href="https://ieeexplore.ieee.org/abstract/document/8711758" target="_blank">Read full article</a></span></p>
               </div>
             </div>
           </div>
@@ -276,31 +281,28 @@
           <div class="col-md-4">
             <div class="box-testimony">
               <blockquote class="to-animate-2">
-                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                  live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                  language ocean. Far far
-                  away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                  texts.&rdquo;</p>
+                <p>&ldquo;Beyond 2020, the era will belong to new and better communication systems named Fifth Generation of 
+                  communication (5G) systems. The paper summarizes the major outcomes and observations of previous publications 
+                  and experiments like ray tracing, done by various academic organisations and industries...&rdquo;</p>
               </blockquote>
               <div class="author to-animate">
-                <figure><img src="images/person2.jpg" alt="Person2"></figure>
-                <p>John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span
-                    class="subtext">Creative Director</span></p>
-              </div>
+                  <figure><img src="images/research/ieee.jpg"></figure>
+                  <p style="color: #fff">IEEE June 2019
+                     <span style="color: #fff" class="subtext"><a href="https://ieeexplore.ieee.org/document/8745875" target="_blank">Read full article</a></span></p>
+                </div>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="box-testimony">
               <blockquote class="to-animate-2">
-                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                  live the blind texts. &rdquo;</p>
+                <p>&ldquo;A New Grounded Impedance Multiplier using VDDIBA. &rdquo;</p>
               </blockquote>
               <div class="author to-animate">
-                <figure><img src="images/person3.jpg" alt="Person3"></figure>
-                <p>Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span
-                    class="subtext">Creative Director</span></p>
-              </div>
+                  <figure><img src="images/research/ieee.jpg"></figure>
+                  <p style="color: #fff">IEEE
+                     <span style="color: #fff" class="subtext"><a href="#fh5co-testimonials">Yet to publish</a></span></p>
+                </div>
             </div>
           </div>
 
@@ -311,40 +313,56 @@
 
     <section id="fh5co-services" data-section="services">
       <div class="container">
+          
         <div class="row">
           <div class="col-md-12 section-heading text-left" style="margin-bottom: 10px; padding-bottom:5px; ">
             <h2 class=" left-border to-animate">Skills</h2>
             <div class="row">
               <div class="col-md-8 subtext to-animate">
-                <h3 style="margin-bottom: 1.2%; font-size: 20px;">As a result of my perpetual curiosity, I have practical experience with a wide range of technologies
+                <h3 style="margin-bottom: 1.2%; font-size: 20px;">As a result of my perpetual curiosity, I have practical
+                  experience with a wide range of technologies
                   including:</h3>
               </div>
             </div>
             <div class="row" style="margin: auto;">
-              <button class="button to-animate skillLogo"><img style="height: 25px;" src="images/Python.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 25px;" src="images/R.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 30px;" src="images/C.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 30px;" src="images/TF.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 35px;" src="images/Java.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 45px;" src="images/Scikit-Learn.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 40px;" src="images/Pandas.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 35px;" src="images/NumPy.png"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 40px;" src="images/HTML.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 40px;" src="images/CSS.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 23px;" src="images/Matplotlib.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 28px;" src="images/Keras.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 45px;" src="images/MySQL.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 35px;" src="images/mongoDB.svg"/></button>
-              <button class="button to-animate skillLogo"><img style="height: 30px;" src="images/Firebase.svg"/></button>
+                <button class="button to-animate skillLogo"><img style="height: 25px;"
+                    src="images/skills/Python.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 25px;" src="images/skills/R.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 30px;" src="images/skills/C.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 30px;"
+                    src="images/skills/TF.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 35px;"
+                    src="images/skills/Java.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 45px;"
+                    src="images/skills/Scikit-Learn.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 40px;"
+                    src="images/skills/Pandas.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 35px;"
+                    src="images/skills/NumPy.png" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 40px;"
+                    src="images/skills/HTML.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 40px;"
+                    src="images/skills/CSS.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 23px;"
+                    src="images/skills/Matplotlib.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 28px;"
+                    src="images/skills/Keras.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 45px;"
+                    src="images/skills/MySQL.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 35px;"
+                    src="images/skills/mongoDB.svg" /></button>
+                <button class="button to-animate skillLogo"><img style="height: 30px;"
+                    src="images/skills/Firebase.svg" /></button>
             </div>
             <div class="row col-md-8 subtext to-animate">
-              <h3 style="margin-top: 10%; font-size: 20px;"> For use with concepts such as:</h3>
+            <h3 style="margin-top: 10%; font-size: 20px;"> For use with concepts such as:</h3>
             </div>
           </div>
         </div>
         <div class="row">
-
+            
           <div class="col-md-6 col-sm-6 fh5co-service to-animate">
+              
             <i class="icon to-animate-2 icon-video2"></i>
             <h3>Machine Learning</h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -381,7 +399,10 @@
           <div class="clearfix visible-sm-block"></div>
 
         </div>
+
+        
       </div>
+
     </section>
 
 
@@ -474,7 +495,7 @@
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="fh5co-counter to-animate">
               <i class="fh5co-counter-icon icon-briefcase to-animate-2"></i>
-              <span class="fh5co-counter-number js-counter" data-from="0" data-to="6" data-speed="1500"
+              <span class="fh5co-counter-number js-counter" data-from="0" data-to="6" data-speed="3000"
                 data-refresh-interval="50">6</span>
               <span class="fh5co-counter-label">Finished projects</span>
             </div>
@@ -483,7 +504,7 @@
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="fh5co-counter to-animate">
               <i class="fh5co-counter-icon icon-code to-animate-2"></i>
-              <span class="fh5co-counter-number js-counter" data-from="0" data-to="187656" data-speed="5000"
+              <span class="fh5co-counter-number js-counter" data-from="0" data-to="187656" data-speed="3000"
                 data-refresh-interval="50">187656</span>
               <span class="fh5co-counter-label">Lines of code</span>
             </div>
@@ -492,7 +513,7 @@
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="fh5co-counter to-animate">
               <em class="fh5co-counter-icon icon-cup to-animate-2"></em>
-              <span class="fh5co-counter-number js-counter" data-from="0" data-to="1302" data-speed="5000"
+              <span class="fh5co-counter-number js-counter" data-from="0" data-to="1302" data-speed="3000"
                 data-refresh-interval="50">1302</span>
               <span class="fh5co-counter-label">Cups of coffee</span>
             </div>
@@ -500,8 +521,8 @@
 
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="fh5co-counter to-animate">
-              <img class="fh5co-counter-icon to-animate-2" style="margin:auto;" src="images/tech2.svg" alt="Kiwi">
-              <span class="fh5co-counter-number js-counter" data-from="0" data-to="23" data-speed="2500"
+              <img class="fh5co-counter-icon to-animate-2" style="margin:auto;" src="images/stats/tech2.svg" alt="Kiwi">
+              <span class="fh5co-counter-number js-counter" data-from="0" data-to="23" data-speed="3000"
                 data-refresh-interval="50">23</span>
               <span class="fh5co-counter-label">Tech used</span>
             </div>
@@ -527,12 +548,12 @@
         <div class="fh5co-contact-info column to-animate grid">
 
           <div class="column left">
-            <li><i class="icon-home"></i><a style="color:#fff; text-decoration: none;"
-                href="https://www.google.com/maps/place/Modinagar,+Uttar+Pradesh/" target="_blank">Modinagar, India</li>
+            <li><i class="icon-home"></i><a style="color:#fff; text-decoration: none;" 
+              href="https://www.google.com/maps/place/Noida,+Uttar+Pradesh/" target="_blank">Noida, India</a></li>
           </div>
           <div class="column right">
-            <li><i class="icon-phone"></i><a style="color:#fff; text-decoration: none;" href="tel:+918755837310">+91 87558
-                37310</a></li>
+            <li><i class="icon-phone"></i><a style="color:#fff; text-decoration: none;" 
+              href="tel:+918755837310">+91 87558 37310</a></li>
           </div>
 
         </div>
@@ -551,8 +572,6 @@
 
           </ul>
         </div>
-      </div>
-      </div>
       </div>
     </section>
 
@@ -588,6 +607,9 @@
     <script src="js/particles.js"></script>
 
     <script src="assets/js/navigation.js"></script>
-
+    
+    <script src="js/typed.js"></script>
+    <script src="js/typing.js"></script>
   </body>
+
 </html>

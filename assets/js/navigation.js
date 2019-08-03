@@ -25,7 +25,8 @@ function perticularProject(ind){
 }
 
 function passData(p) {
-  window.open('./projects.html?p=' + encodeURIComponent(p),"_self")
+  //window.open('./projects.html?p=' + encodeURIComponent(p),"_self")   //open in same tab
+  window.open('./projects.html?p=' + encodeURIComponent(p))
 }
 
 function parseData () {
