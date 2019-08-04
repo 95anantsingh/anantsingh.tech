@@ -373,7 +373,7 @@
 									document.getElementsByClassName("next")[0].classList.add("disabled");
 								else
 									document.getElementsByClassName("next")[0].classList.remove("disabled");
-							}, 0.1);
+							}, 10);
 
 					},
 					deactivate = function() {

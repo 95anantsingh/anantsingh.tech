@@ -989,15 +989,15 @@
     }
     .fh5co-person figure {
       position: absolute;
-      margin-top: -60px;
+      margin-top: -40px;
       top: 0;
       left: 50%;
-      margin-left: -60px;
+      margin-left: -40px;
       display: block;
       margin-bottom: 50px;
     }
     .fh5co-person figure img {
-      width: 120px;
+      width: 80px;
       border: 2px solid #f2f2f2;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
