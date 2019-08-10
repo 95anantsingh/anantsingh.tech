@@ -90,12 +90,16 @@
  }
 }
 
+#fh5co-intro .row{
+  margin:auto;
+}
+
 .topskills{
   background-color: #fff;
   padding-top: 2%;
   padding-bottom: 2%;
   margin:0px;
-  
+  width: 100%;
 }
 
 #fh5co-work {
