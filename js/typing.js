@@ -6,7 +6,7 @@ $(document).ready(function() {
   	$('#typed-head').typed({
       stringsElement: document.getElementById('typed-string1'),
       startDelay: 1500,
-      typeSpeed: 0,
+      typeSpeed: 10,
       callback: function() {
         $(".typed-cursor").hide();
         string2();
@@ -19,7 +19,7 @@ $(document).ready(function() {
     Typed.new('#typed-intro', {
       stringsElement: document.getElementById('typed-string2'),
       startDelay: 500,
-      typeSpeed: -9,
+      typeSpeed: 0,
       callback: function() {
         $(".typed-cursor").hide();
         introEnd();
@@ -31,7 +31,7 @@ $(document).ready(function() {
     Typed.new('#intro-end', {
       strings: ["understand cause and effect.","extract decision making insights.","help machines learn.","make the world a better place. ^3000"],
       backDelay: 800,
-      typeSpeed: 0,
+      typeSpeed: 10,
       backSpeed: 0,
       callback: function() {
         $(".typed-cursor").hide();
