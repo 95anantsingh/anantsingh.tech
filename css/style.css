@@ -23,11 +23,11 @@
     }
 
     .noscrollBar{
-      scrollbar-width: none; /* Firefox 64 */
-      -ms-overflow-style: none;
+      scrollbar-width: none;      /* Firefox 64 */
+      -ms-overflow-style: none;   /* IE
     }
     .noscrollBar::-webkit-scrollbar { /* WebKit */
-      display: none;
+      display: none;              /* Chrome, Safari
     }
 
     a {
