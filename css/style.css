@@ -22,6 +22,14 @@
       position: relative;
     }
 
+    .noscrollBar{
+      scrollbar-width: none; /* Firefox 64 */
+      -ms-overflow-style: none;
+    }
+    .noscrollBar::-webkit-scrollbar { /* WebKit */
+      display: none;
+    }
+
     a {
       color: #7c55ff;
       -webkit-transition: 0.5s;
