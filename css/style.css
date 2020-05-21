@@ -24,10 +24,10 @@
 
     .noscrollBar{
       scrollbar-width: none;      /* Firefox 64 */
-      -ms-overflow-style: none;   /* IE
+      -ms-overflow-style: none;   /* IE */
     }
     .noscrollBar::-webkit-scrollbar { /* WebKit */
-      display: none;              /* Chrome, Safari
+      display: none;              /* Chrome, Safari */
     }
 
     a {
