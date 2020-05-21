@@ -1561,7 +1561,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 19px;   /*24*/
 }
 
 h4, .h4 {
@@ -1935,6 +1935,7 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 88%;
 }
 .container:before, .container:after {
   content: " ";
@@ -1945,17 +1946,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 80%;/*750px;*/
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 80%;/*970px;*/
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 80%;/**1170px;*/
   }
 }
 
