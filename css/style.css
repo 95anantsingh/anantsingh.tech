@@ -211,7 +211,7 @@
     @media screen and (max-width: 768px) {
       #fh5co-header {
         margin-top: 0;
-        background: rgba(0, 0, 0, 0.9);                   /* header color mobile up*/
+        background: rgba(0, 0, 0, 0.93);                   /* header color mobile up*/
         -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
         -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
         -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -339,7 +339,7 @@
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
-      background-color: transparent; /* menu active item underline color down header desktop*/
+      background-color: rgba(255, 255, 255, 0.2) ; /* menu active item underline color down header desktop*/
     }
     #fh5co-header .navbar-default {
       border: transparent;
@@ -488,12 +488,12 @@
       
       vertical-align: middle;
       padding: 40px;
-      background: #fff;
-      -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-      -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-      -ms-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-      -o-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-      box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+      background: rgb(177, 177, 177);
+      -webkit-box-shadow: 7px 14px 42px 3px rgba(90, 90, 90, 0.8);
+      -moz-box-shadow: 7px 14px 42px 3px rgba(90, 90, 90, 0.8);
+      -ms-box-shadow: 7px 14px 42px 3px rgba(90, 90, 90, 0.8);
+      -o-box-shadow: 7px 14px 42px 3px rgba(90, 90, 90, 0.8);
+      box-shadow: 7px 14px 42px 3px rgba(90, 90, 90, 0.8);
       z-index: 7;
       flex-grow: 1;
       background-size: cover;
@@ -516,7 +516,7 @@
       bottom: 0;
     }
     #fh5co-intro .fh5co-block > .overlay {
-      background: #fff;
+      background: rgba(255, 255, 255,0.75);       /*  Topskills cards passive color  */
       opacity: 1;
       z-index: 9;
       position: absolute;
@@ -962,7 +962,7 @@
       margin: 0;
     }
     #fh5co-work .fh5co-project-item .fh5co-text span {
-      color: #b3b3b3;
+      color: rgba(0,0,0,0.85);
       font-size: 16px;
       font-weight: 400;
     }
