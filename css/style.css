@@ -1073,6 +1073,7 @@
     #fh5co-contact {
       padding-bottom: 0;
     }
+   
     #fh5co-contact .fh5co-contact-info {
       padding: 0;
       margin: 0 0 1.5em 0;
@@ -1254,13 +1255,33 @@
 
 
     #footer {
-      padding: 50px 0;
-      color: #7f7f7f;
+      padding: 0;
+      margin-top: -15px;
+      color: #353535;
       position: relative;
+      background-color: rgba(255, 255, 255, 0.8);
+      height: fit-content;
     }
+    #fh5co-contact:after {
+      bottom: -50px;
+      position: absolute;
+      transform: rotate(-1.7deg);
+      -ms-transform: rotate(-1.7deg);
+      -webkit-transform: rotate(-1.7deg);
+      -o-transform: rotate(-1.7deg);
+      -moz-transform: rotate(-1.7deg);
+      background-color: rgba(255, 255, 255, 0.8);
+      content: "";
+      z-index: -1;
+      display: inline-block;
+      height: 70px;
+      padding: 0;
+      width: 101%;
+    }
+   
     #footer .gotop {
       position: absolute;
-      top: -20px;
+      top: -45px;
       left: 50%;
       margin-left: -25px;
       background: #fff;
@@ -1279,15 +1300,12 @@
       -o-transition: 0.2s;
       transition: 0.2s;
     }
+
     #footer .gotop:hover, #footer .gotop:focus {
-      top: -25px;
+      top: -50px;
       text-decoration: none !important;
     }
-    #footer .copyright {
-      font-size: 16px;
-      margin-bottom: 0px;
-      padding-bottom: 0;
-    }
+    
 
 
     .btn {
